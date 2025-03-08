@@ -1,0 +1,8 @@
+---
+- hosts: devops
+  user: sl
+  become: yes
+  connection: ssh
+  tasks:
+    - name: Install HTTPD by Hitesh
+      action: yum name=httpd state=present
